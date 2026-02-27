@@ -5,6 +5,9 @@
 # ------------------------------------------------
 import os
 import sys
+
+# Ensure src/ is in the python path to allow direct execution
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 import uuid
 import time
 import difflib

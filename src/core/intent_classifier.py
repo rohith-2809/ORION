@@ -83,7 +83,7 @@ class IntentClassifier:
         # ================= DOCUMENT CREATE (KEYWORD FALLBACK) =================
         # Simplest possible logic: "create" + "document" = INTENT
         is_create = any(
-            w in t for w in ["create", "generate", "write", "draft", "make"]
+            w in t for w in ["create", "generate", "write", "draft", "make", "prepare", "build", "produce"]
         )
         is_doc = any(
             w in t for w in [
