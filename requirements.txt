@@ -1,0 +1,14 @@
+flask
+flask-cors
+psutil
+numpy
+scikit-learn
+sentence-transformers
+python-docx
+python-pptx
+requests
+vosk
+sounddevice
+soundfile
+flask-socketio
+eventlet

@@ -1,0 +1,975 @@
+[
+  {
+    "timestamp": "2026-01-08T18:20:48.535546",
+    "action": "MEMORY_STORE",
+    "target": "github",
+    "approved": true,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-01-08T18:20:58.586379",
+    "action": "FILE_EDIT",
+    "target": "dummy_good.py",
+    "approved": false,
+    "result": "NO_CHANGE"
+  },
+  {
+    "timestamp": "2026-01-08T18:51:49.814646",
+    "action": "MEMORY_STORE",
+    "target": "github",
+    "approved": true,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-01-08T18:52:12.156481",
+    "action": "FILE_EDIT",
+    "target": "dummy_good.py",
+    "approved": false,
+    "result": "NO_CHANGE"
+  },
+  {
+    "timestamp": "2026-01-08T18:58:09.301008",
+    "action": "MEMORY_STORE",
+    "target": "github",
+    "approved": true,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-01-08T19:00:50.362933",
+    "action": "FILE_EDIT",
+    "target": "dummy_good.py",
+    "approved": false,
+    "result": "REJECTED"
+  },
+  {
+    "timestamp": "2026-01-08T19:01:32.092539",
+    "action": "FILE_EDIT",
+    "target": "dummy_good.py",
+    "approved": false,
+    "result": "REJECTED"
+  },
+  {
+    "timestamp": "2026-01-08T19:02:49.610996",
+    "action": "MEMORY_STORE",
+    "target": "github",
+    "approved": true,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-01-08T19:05:56.480223",
+    "action": "MEMORY_STORE",
+    "target": "github",
+    "approved": true,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-01-08T19:06:41.519359",
+    "action": "MEMORY_STORE",
+    "target": "github",
+    "approved": true,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-01-08T19:09:38.310629",
+    "action": "MEMORY_STORE",
+    "target": "github",
+    "approved": true,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-01-08T19:15:29.213901",
+    "action": "MEMORY_STORE",
+    "target": "github",
+    "approved": true,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-01-08T19:25:35.202605",
+    "action": "MEMORY_STORE",
+    "target": "github",
+    "approved": true,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-01-08T19:25:50.140526",
+    "action": "FILE_EDIT",
+    "target": "dummy_good.py",
+    "approved": false,
+    "result": "REJECTED"
+  },
+  {
+    "timestamp": "2026-01-11T19:18:53.990435",
+    "action": "RAG_ADD",
+    "target": "knowledge",
+    "approved": true,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-01-11T19:18:54.072848",
+    "action": "RAG_ADD",
+    "target": "knowledge",
+    "approved": true,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-01-11T19:33:50.352981",
+    "action": "PLAN",
+    "target": "goal",
+    "approved": false,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-01-11T19:33:50.379333",
+    "action": "PLAN",
+    "target": "goal",
+    "approved": false,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-01-12T18:10:44.551155",
+    "action": "FILE_LIST",
+    "target": "{}",
+    "approved": true,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-01-26T15:06:23.458111",
+    "action": "SECURITY_INCIDENT",
+    "target": "Possible ransomware behavior: mass file operations",
+    "approved": false,
+    "result": "confirmed"
+  },
+  {
+    "timestamp": "2026-01-26T15:21:24.533134",
+    "action": "SECURITY_INCIDENT",
+    "target": "File integrity violation: /tmp/orion_test/file_1.txt",
+    "approved": false,
+    "result": "suspicious"
+  },
+  {
+    "timestamp": "2026-01-26T15:21:25.422472",
+    "action": "SECURITY_INCIDENT",
+    "target": "Possible ransomware behavior: mass file operations",
+    "approved": false,
+    "result": "confirmed"
+  },
+  {
+    "timestamp": "2026-01-26T15:23:09.688890",
+    "action": "SECURITY_INCIDENT",
+    "target": "Possible ransomware behavior: mass file operations",
+    "approved": false,
+    "result": "confirmed"
+  },
+  {
+    "timestamp": "2026-01-27T14:05:13.848079",
+    "action": "RAG_ADD",
+    "target": "knowledge",
+    "approved": true,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-01-27T14:09:02.628004",
+    "action": "FILE_EDIT",
+    "target": "file wake_listener.py",
+    "approved": false,
+    "result": "ERROR"
+  },
+  {
+    "timestamp": "2026-01-27T14:09:32.127861",
+    "action": "DELETE",
+    "target": "file test_orion.py",
+    "approved": false,
+    "result": "CANCELLED"
+  },
+  {
+    "timestamp": "2026-01-27T14:09:32.129924",
+    "action": "SECURITY_INCIDENT",
+    "target": "File integrity violation: /home/rohith/ORION/action_ledger.json",
+    "approved": false,
+    "result": "suspicious"
+  },
+  {
+    "timestamp": "2026-01-27T14:10:16.854797",
+    "action": "FILE_DELETE",
+    "target": "file test_orion.py",
+    "approved": true,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-01-27T14:15:21.985793",
+    "action": "PLAN",
+    "target": "goal",
+    "approved": false,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-01-27T14:17:24.106440",
+    "action": "SECURITY_INCIDENT",
+    "target": "Possible ransomware behavior: mass file operations",
+    "approved": false,
+    "result": "confirmed"
+  },
+  {
+    "timestamp": "2026-01-27T14:31:22.485664",
+    "action": "RAG_ADD",
+    "target": "knowledge",
+    "approved": true,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-01-27T14:33:24.428081",
+    "action": "FILE_EDIT",
+    "target": "wake_listener.py",
+    "approved": false,
+    "result": "REJECTED"
+  },
+  {
+    "timestamp": "2026-01-27T14:33:24.442323",
+    "action": "SECURITY_INCIDENT",
+    "target": "File integrity violation: /home/rohith/ORION/action_ledger.json",
+    "approved": false,
+    "result": "suspicious"
+  },
+  {
+    "timestamp": "2026-01-27T14:41:01.699447",
+    "action": "SECURITY_INCIDENT",
+    "target": "File integrity violation: /home/rohith/ORION/.orion_backup/test_orion.py.20260127_144101.bak",
+    "approved": false,
+    "result": "suspicious"
+  },
+  {
+    "timestamp": "2026-01-27T14:46:55.780791",
+    "action": "PLAN",
+    "target": "goal",
+    "approved": false,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-02-02T02:58:58.821447",
+    "action": "SECURITY_INCIDENT",
+    "target": "File integrity violation: /home/rohith/ORION/orchestrator.py",
+    "approved": false,
+    "result": "suspicious"
+  },
+  {
+    "timestamp": "2026-02-02T03:01:14.329753",
+    "action": "SECURITY_INCIDENT",
+    "target": "File integrity violation: /tmp/tmpgn97t9w5.wav",
+    "approved": false,
+    "result": "suspicious"
+  },
+  {
+    "timestamp": "2026-02-02T03:01:18.635020",
+    "action": "SECURITY_INCIDENT",
+    "target": "Possible ransomware behavior: mass file operations",
+    "approved": false,
+    "result": "confirmed"
+  },
+  {
+    "timestamp": "2026-02-02T03:03:28.730456",
+    "action": "EMERGENCY_ACTION",
+    "target": "freeze_directory",
+    "approved": false,
+    "result": "FAILED: 'OrionExecutor' object has no attribute 'security_engine'"
+  },
+  {
+    "timestamp": "2026-02-02T03:03:28.744580",
+    "action": "EMERGENCY_ACTION",
+    "target": "propose_disable_outbound_network",
+    "approved": false,
+    "result": "FAILED: 'OrionExecutor' object has no attribute 'security_engine'"
+  },
+  {
+    "timestamp": "2026-02-02T03:11:41.079824",
+    "action": "SECURITY_INCIDENT",
+    "target": "File integrity violation: /tmp/tmpc8nq_tt9.wav",
+    "approved": false,
+    "result": "suspicious"
+  },
+  {
+    "timestamp": "2026-02-02T03:11:45.655036",
+    "action": "SECURITY_INCIDENT",
+    "target": "Possible ransomware behavior: mass file operations",
+    "approved": false,
+    "result": "confirmed"
+  },
+  {
+    "timestamp": "2026-02-02T03:19:01.303995",
+    "action": "SECURITY_INCIDENT",
+    "target": "File integrity violation: /tmp/tmp2x0xthy3.wav",
+    "approved": false,
+    "result": "suspicious"
+  },
+  {
+    "timestamp": "2026-02-02T03:19:05.440546",
+    "action": "SECURITY_INCIDENT",
+    "target": "Possible ransomware behavior: mass file operations",
+    "approved": false,
+    "result": "confirmed"
+  },
+  {
+    "timestamp": "2026-02-02T03:19:50.951494",
+    "action": "EMERGENCY_ACTION",
+    "target": "freeze_directory",
+    "approved": false,
+    "result": "FAILED: 'OrionExecutor' object has no attribute 'security_engine'"
+  },
+  {
+    "timestamp": "2026-02-02T03:19:50.955844",
+    "action": "EMERGENCY_ACTION",
+    "target": "propose_disable_outbound_network",
+    "approved": false,
+    "result": "FAILED: 'OrionExecutor' object has no attribute 'security_engine'"
+  },
+  {
+    "timestamp": "2026-02-02T03:19:51.102249",
+    "action": "EMERGENCY_FALLBACK",
+    "target": "system",
+    "approved": true,
+    "result": "CONTAINED"
+  },
+  {
+    "timestamp": "2026-02-02T17:08:52.697462",
+    "action": "SECURITY_INCIDENT",
+    "target": "File integrity violation: /home/rohith/ORION/intent_classifier.py",
+    "approved": false,
+    "result": "suspicious"
+  },
+  {
+    "timestamp": "2026-02-02T17:45:06.595166",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-02T17:47:51.868635",
+    "action": "SECURITY_INCIDENT",
+    "target": "File integrity violation: /home/rohith/ORION/ORION_DOCUMENT.docx",
+    "approved": false,
+    "result": "suspicious"
+  },
+  {
+    "timestamp": "2026-02-02T17:47:52.066084",
+    "action": "DOCUMENT_CREATE",
+    "target": "ORION_DOCUMENT.docx",
+    "approved": true,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-02-02T18:21:00.240657",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-02T18:23:24.320636",
+    "action": "SECURITY_INCIDENT",
+    "target": "File integrity violation: /home/rohith/ORION/AGI.docx",
+    "approved": false,
+    "result": "suspicious"
+  },
+  {
+    "timestamp": "2026-02-02T18:23:24.518821",
+    "action": "DOCUMENT_CREATE",
+    "target": "AGI.docx",
+    "approved": true,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-02-02T18:33:44.220462",
+    "action": "SECURITY_INCIDENT",
+    "target": "Possible ransomware behavior: mass file operations",
+    "approved": false,
+    "result": "confirmed"
+  },
+  {
+    "timestamp": "2026-02-03T17:01:38.110655",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-03T17:06:00.617488",
+    "action": "SECURITY_INCIDENT",
+    "target": "Possible ransomware behavior: mass file operations",
+    "approved": false,
+    "result": "confirmed"
+  },
+  {
+    "timestamp": "2026-02-03T17:24:30.145153",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "600s"
+  },
+  {
+    "timestamp": "2026-02-03T17:29:00.225390",
+    "action": "SECURITY_INCIDENT",
+    "target": "File integrity violation: /home/rohith/ORION/orchestrator.py",
+    "approved": false,
+    "result": "suspicious"
+  },
+  {
+    "timestamp": "2026-02-03T17:46:53.663729",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "600s"
+  },
+  {
+    "timestamp": "2026-02-03T17:50:04.708073",
+    "action": "SECURITY_INCIDENT",
+    "target": "File integrity violation: /home/rohith/ORION/ARTIFICIAL_GENERAL_INTELLIGENCE.docx",
+    "approved": false,
+    "result": "suspicious"
+  },
+  {
+    "timestamp": "2026-02-03T17:50:04.909830",
+    "action": "DOCUMENT_CREATE",
+    "target": "ARTIFICIAL_GENERAL_INTELLIGENCE.docx",
+    "approved": true,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-02-03T18:08:55.893138",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "600s"
+  },
+  {
+    "timestamp": "2026-02-03T18:11:29.657885",
+    "action": "SECURITY_INCIDENT",
+    "target": "File integrity violation: /home/rohith/ORION/brain.py",
+    "approved": false,
+    "result": "suspicious"
+  },
+  {
+    "timestamp": "2026-02-03T18:12:29.860533",
+    "action": "DOCUMENT_CREATE",
+    "target": "/home/rohith/ORION/ARTIFICIAL_GENERAL_INTELLIGENCE.docx",
+    "approved": true,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-02-03T18:28:57.557812",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-03T18:48:05.883711",
+    "action": "SECURITY_INCIDENT",
+    "target": "File integrity violation: /home/rohith/ORION/ARTIFICIAL_GENERAL_INTELLIGENCE.docx",
+    "approved": false,
+    "result": "suspicious"
+  },
+  {
+    "timestamp": "2026-02-03T18:48:06.092912",
+    "action": "DOCUMENT_CREATE",
+    "target": "/home/rohith/ORION/ARTIFICIAL_GENERAL_INTELLIGENCE.docx",
+    "approved": true,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-02-03T19:04:08.902958",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-03T19:12:25.575987",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-03T19:12:25.641741",
+    "action": "SECURITY_INCIDENT",
+    "target": "File integrity violation: /home/rohith/ORION/action_ledger.json",
+    "approved": false,
+    "result": "suspicious"
+  },
+  {
+    "timestamp": "2026-02-03T19:19:34.780710",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-10T11:27:33.860898",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-10T11:28:47.967591",
+    "action": "SECURITY_INCIDENT",
+    "target": "Possible ransomware behavior: mass file operations",
+    "approved": false,
+    "result": "confirmed"
+  },
+  {
+    "timestamp": "2026-02-10T12:41:19.165688",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-10T12:46:48.450154",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-10T14:11:13.807155",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-10T14:11:13.902789",
+    "action": "SECURITY_INCIDENT",
+    "target": "File integrity violation: /home/rohith/ORION/action_ledger.json",
+    "approved": false,
+    "result": "suspicious"
+  },
+  {
+    "timestamp": "2026-02-10T17:15:26.798975",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-11T03:15:42.421054",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-11T03:23:12.850964",
+    "action": "SECURITY_INCIDENT",
+    "target": "File integrity violation: /home/rohith/ORION/windows_agent.py",
+    "approved": false,
+    "result": "suspicious"
+  },
+  {
+    "timestamp": "2026-02-11T03:34:00.496442",
+    "action": "SECURITY_INCIDENT",
+    "target": "File integrity violation: /home/rohith/ORION/intent_classifier.py",
+    "approved": false,
+    "result": "suspicious"
+  },
+  {
+    "timestamp": "2026-02-11T03:39:44.629216",
+    "action": "SECURITY_INCIDENT",
+    "target": "File integrity violation: /home/rohith/ORION/debug_intent.py",
+    "approved": false,
+    "result": "suspicious"
+  },
+  {
+    "timestamp": "2026-02-11T03:51:54.064346",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-11T03:53:39.140011",
+    "action": "SECURITY_INCIDENT",
+    "target": "File integrity violation: /tmp/orion_tts.wav",
+    "approved": false,
+    "result": "suspicious"
+  },
+  {
+    "timestamp": "2026-02-11T07:29:20.434505",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-11T07:33:41.767175",
+    "action": "SECURITY_INCIDENT",
+    "target": "File integrity violation: /tmp/orion_tts.wav",
+    "approved": false,
+    "result": "suspicious"
+  },
+  {
+    "timestamp": "2026-02-11T07:38:05.565587",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-12T09:45:28.143522",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-12T09:47:01.290056",
+    "action": "SECURITY_INCIDENT",
+    "target": "File integrity violation: /home/rohith/ORION/intent_classifier.py",
+    "approved": false,
+    "result": "suspicious"
+  },
+  {
+    "timestamp": "2026-02-12T09:51:16.606570",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-12T09:55:35.973893",
+    "action": "SECURITY_INCIDENT",
+    "target": "File integrity violation: /tmp/orion_tts.wav",
+    "approved": false,
+    "result": "suspicious"
+  },
+  {
+    "timestamp": "2026-02-12T11:23:57.677695",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-12T12:11:41.051782",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-12T12:44:26.675309",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-12T16:31:06.199604",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-12T17:52:19.196081",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-12T17:55:42.450951",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-12T18:03:16.140960",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-12T18:49:51.002220",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-13T12:20:30.884672",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-13T12:56:59.558819",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-13T12:58:13.239744",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-13T13:19:57.216269",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-13T13:26:44.657381",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-13T14:25:41.604287",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-13T14:46:48.146742",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-13T16:54:14.979652",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-14T03:05:34.905922",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-14T03:23:48.561524",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-14T03:47:58.288297",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-14T04:20:40.796923",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-14T04:28:42.331114",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-14T04:38:19.088515",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-14T04:43:06.001562",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-14T04:46:43.609526",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-14T05:08:53.704647",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-14T06:01:54.158513",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-14T06:07:17.307989",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-14T06:16:48.007385",
+    "action": "AUTHORITY_ENABLE",
+    "target": "GOD",
+    "approved": true,
+    "result": "120s"
+  },
+  {
+    "timestamp": "2026-02-22T11:34:51.744843",
+    "action": "RAG_ADD",
+    "target": "knowledge",
+    "approved": true,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-02-26T04:08:40.360975",
+    "action": "RAG_ADD",
+    "target": "knowledge",
+    "approved": true,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-02-26T04:30:41.037097",
+    "action": "PLAN",
+    "target": "goal",
+    "approved": false,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-02-26T04:33:31.541007",
+    "action": "PLAN",
+    "target": "goal",
+    "approved": false,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-02-26T04:34:06.932100",
+    "action": "PLAN",
+    "target": "goal",
+    "approved": false,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-02-26T04:34:50.402934",
+    "action": "PLAN",
+    "target": "goal",
+    "approved": false,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-02-26T04:35:25.239250",
+    "action": "PLAN",
+    "target": "goal",
+    "approved": false,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-02-26T04:36:03.153100",
+    "action": "PLAN",
+    "target": "goal",
+    "approved": false,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-02-26T04:36:42.618465",
+    "action": "PLAN",
+    "target": "goal",
+    "approved": false,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-02-26T04:37:28.292780",
+    "action": "PLAN",
+    "target": "goal",
+    "approved": false,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-02-26T04:38:07.735564",
+    "action": "PLAN",
+    "target": "goal",
+    "approved": false,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-02-26T05:01:41.937189",
+    "action": "PLAN",
+    "target": "goal",
+    "approved": false,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-02-26T06:30:06.365882",
+    "action": "RAG_ADD",
+    "target": "knowledge",
+    "approved": true,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-02-26T06:42:49.851875",
+    "action": "PLAN",
+    "target": "goal",
+    "approved": false,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-02-26T06:46:13.470453",
+    "action": "PLAN",
+    "target": "goal",
+    "approved": false,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-02-26T06:46:57.191864",
+    "action": "PLAN",
+    "target": "goal",
+    "approved": false,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-02-26T06:47:40.719716",
+    "action": "PLAN",
+    "target": "goal",
+    "approved": false,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-02-26T06:48:54.470008",
+    "action": "PLAN",
+    "target": "goal",
+    "approved": false,
+    "result": "SUCCESS"
+  },
+  {
+    "timestamp": "2026-02-26T07:05:41.842273",
+    "action": "PLAN",
+    "target": "goal",
+    "approved": false,
+    "result": "SUCCESS"
+  }
+]

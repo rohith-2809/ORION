@@ -1,0 +1,14 @@
+{
+  "job_id": "doc_1770992749",
+  "topic": "the roman empire",
+  "outline": [],
+  "context": "",
+  "current_index": 0,
+  "status": "COMPLETED",
+  "created_at": "2026-02-13T14:29:50.017111",
+  "updated_at": "2026-02-13T14:30:06.443631",
+  "output_path": "outputs/doc_1770992749.md",
+  "mode": "deep",
+  "output_format": "docx",
+  "slide_map": {}
+}

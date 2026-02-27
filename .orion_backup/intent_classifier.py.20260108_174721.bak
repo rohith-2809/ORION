@@ -1,0 +1,83 @@
+# intent_classifier.py
+
+import re
+
+
+class IntentClassifier:
+    """
+    ORION Intent Classifier – Phase 3.2 (STABLE)
+
+    Responsibilities:
+    - Detect intent ONLY (no execution)
+    - Normalize memory keys deterministically
+    - Declare file intents (list, read, edit, delete)
+    - Support confirmation / rejection gating
+    """
+
+    def _normalize_key(self, key: str) -> str:
+        return (
+            key.strip()
+            .lower()
+            .replace("?", "")
+            .replace(" ", "_")
+        )
+
+    def classify(self, text: str) -> dict:
+        raw = text.strip()
+        t = raw.lower().strip()
+
+        # ================= MEMORY STORE =================
+        m = re.match(r"my\s+(.+?)\s+is\s+(.+)", t)
+        if m:
+            return {
+                "intent": "MEMORY_STORE",
+                "key": self._normalize_key(m.group(1)),
+                "value": m.group(2).strip()
+            }
+
+        # ================= MEMORY QUERY =================
+        m = re.match(r"what\s+is\s+my\s+(.+)", t)
+        if m:
+            return {
+                "intent": "MEMORY_QUERY",
+                "key": self._normalize_key(m.group(1))
+            }
+
+        # ================= FILE LIST =================
+        if re.search(r"\b(list|show)\b.*\b(files|directory|folder)\b", t):
+            return {"intent": "FILE_LIST"}
+
+        # ================= FILE READ =================
+        m = re.match(r"(open|read|show)\s+(.+)", t)
+        if m:
+            return {
+                "intent": "FILE_READ",
+                "path": m.group(2).strip()
+            }
+
+        # ================= FILE EDIT =================
+        m = re.match(r"(edit|modify|change|update|refactor|fix)\s+(.+)", t)
+        if m:
+            return {
+                "intent": "FILE_EDIT",
+                "path": m.group(2).strip()
+            }
+
+        # ================= FILE DELETE =================
+        m = re.match(r"(delete|remove)\s+(.+)", t)
+        if m:
+            return {
+                "intent": "FILE_DELETE",
+                "path": m.group(2).strip()
+            }
+
+        # ================= CONFIRM =================
+        if t in ("confirm", "yes", "approve", "proceed"):
+            return {"intent": "CONFIRM"}
+
+        # ================= CANCEL / REJECT =================
+        if t in ("cancel", "reject", "no"):
+            return {"intent": "CANCEL"}
+
+        # ================= FALLBACK =================
+        return {"intent": "CHAT"}

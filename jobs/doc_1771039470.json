@@ -1,0 +1,19 @@
+{
+  "job_id": "doc_1771039470",
+  "topic": "bio-technology",
+  "outline": [
+    "1. **Data Integration**: Seamlessly integrates large-scale genomic data from various sources, eliminating data silos and enabling researchers to access a unified view of genetic information.",
+    "2. **Pattern Recognition**: Utilizes machine learning algorithms to identify complex patterns and relationships within genetic data, facilitating the discovery of new insights and potential treatments.",
+    "3. **Visualization**: Provides interactive data visualization tools, allowing researchers to easily explore and analyze genetic data, and communicate findings effectively to stakeholders.",
+    "4. **Collaboration**: Enables researchers to collaborate in real-time, sharing insights and discoveries, and accelerating the pace of research and development."
+  ],
+  "context": "",
+  "current_index": 4,
+  "status": "COMPLETED",
+  "created_at": "2026-02-14T03:26:04.486039",
+  "updated_at": "2026-02-14T03:33:54.027513",
+  "output_path": "outputs/doc_1771039470.md",
+  "mode": "brief",
+  "output_format": "docx",
+  "slide_map": {}
+}

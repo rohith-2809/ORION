@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .animate-wake-ripple {
+        animation: wake-ripple 0.8s ease-out forwards;
+    }
+    .animate-listen-pulse {
+        animation: listen-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+}
+
+@keyframes wake-ripple {
+    0% {
+        box-shadow: 0 0 0 0 rgba(74, 243, 255, 0.8);
+        transform: scale(1);
+    }
+    50% {
+        box-shadow: 0 0 0 40px rgba(168, 255, 255, 0.4);
+        transform: scale(1.05);
+    }
+    100% {
+        box-shadow: 0 0 0 80px rgba(74, 243, 255, 0);
+        transform: scale(1);
+    }
+}
+
+@keyframes listen-pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    50% {
+        transform: scale(1.08);
+        opacity: 0.4;
+    }
+}
+@keyframes rotate-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-rotate-slow {
+  animation: rotate-slow 12s linear infinite;
+}
+
+@keyframes rotate-fast {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-rotate-fast {
+  animation: rotate-fast 3s linear infinite;
+}
+
+@keyframes dash-flow {
+  from { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: -300; }
+}
+
+@keyframes breath {
+  0%, 100% { opacity: 0.1; transform: scale(1); }
+  50% { opacity: 0.2; transform: scale(1.05); }
+}
+
+.animate-breath {
+  animation: breath 4s ease-in-out infinite;
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade {
+  animation: fade 0.8s ease forwards;
+}
+
+.scale-102 {
+  transform: scale(1.02);
+}
