@@ -1,0 +1,101 @@
+{
+  "job_id": "doc_1772159699",
+  "topic": "india",
+  "outline": [
+    "Title Slide",
+    "Agenda / Roadmap",
+    "Context / Background: Ancient Civilizations",
+    "Foundational Concepts: Vedic Period",
+    "Core Analysis (Key Components): Mughal Empire",
+    "Applications / Impact / Case Study: British Colonial Era",
+    "Challenges or Limitations: Post-Independence Era",
+    "Modern Relevance: Economic Growth and Technological Advancements",
+    "Future Outlook: Emerging Trends and Challenges",
+    "Conclusion"
+  ],
+  "context": "",
+  "current_index": 10,
+  "status": "FAILED",
+  "created_at": "2026-02-27T02:36:27.386026",
+  "updated_at": "2026-02-27T02:44:26.589941",
+  "output_path": "/mnt/c/Users/rohith/Desktop/ORION_OUTPUTS/doc_1772159699.pptx",
+  "mode": "slide",
+  "output_format": "pptx",
+  "slide_map": {
+    "Title Slide": [
+      "India is the world's second most populous country with over 1.3 billion people.",
+      "Its diverse culture is shaped by 22 official languages and 1,652 dialects.",
+      "India is home to the world's largest democracy, with over 900 million registered voters.",
+      "The country has a growing economy, with a GDP of over $2.7 trillion.",
+      "India's unique blend of traditional and modern industries drives innovation and entrepreneurship."
+    ],
+    "Agenda / Roadmap": [
+      "India's economic growth and demographic dividend to be leveraged for global competitiveness.",
+      "Integration of technology and innovation to address infrastructure and skill gaps.",
+      "Strengthening of institutions and governance to ensure transparency and accountability.",
+      "Identification of key sectors for growth and development, such as renewable energy and biotechnology.",
+      "Development of a robust and inclusive education system to equip the workforce with 21st-century skills."
+    ],
+    "Context / Background: Ancient Civilizations": [
+      "The Indus Valley Civilization (IVC) flourished in modern-day Pakistan and northwestern India between 3300 and 1300 BCE.",
+      "The Vedic period, marked by the composition of the Vedas, saw the rise of Hinduism and the development of the caste system in ancient India around 1500-500 BCE.",
+      "The Mauryan Empire, founded by Chandragupta Maurya, unified much of the Indian subcontinent under a single rule around 322 BCE.",
+      "The Gupta Empire, which ruled from 320 to 550 CE, is often referred to as the \"Golden Age\" of ancient India, marked by significant advancements in science, mathematics, and art.",
+      "The Harappan civilization, which existed from 2600 to 1900 BCE, is known for its sophisticated urban planning, architecture, and water management systems.",
+      "The ancient Indian city of Mohenjo-Daro, a major urban center of the IVC, was discovered in 1922 and is now a UNESCO World Heritage Site."
+    ],
+    "Foundational Concepts: Vedic Period": [
+      "The Vedic Period is characterized by the composition of the Vedas, ancient Indian texts that contain philosophical, ritual, and mythological content.",
+      "The Vedas are divided into four main categories: Samhitas, Brahmanas, Aranyakas, and Upanishads, each with distinct styles and themes.",
+      "The Vedic Period saw the rise of the Vedic civilization, which was marked by the development of a complex social hierarchy, the emergence of urban centers, and the growth of trade and commerce.",
+      "The Vedic people believed in a pantheon of gods and goddesses, with Indra being the most prominent, and developed a system of rituals and sacrifices to appease them.",
+      "The Vedic Period also saw the development of the concept of dharma, which referred to the moral and social order of society, and the importance of the concept of karma, which emphasized the idea that an individual's actions had consequences in the afterlife.",
+      "The Vedic Period laid the foundation for the development of Hinduism, which would later emerge as a distinct religion in ancient India."
+    ],
+    "Core Analysis (Key Components): Mughal Empire": [
+      "The Mughal Empire's core components include:",
+      "A centralized administration system, with the Mughal emperor at its helm, overseeing provincial governors and administrators.",
+      "A complex system of taxation, with revenue generated from land grants, trade, and commerce.",
+      "A robust military structure, comprising infantry, cavalry, and artillery, with a strong emphasis on cavalry warfare.",
+      "A network of trade routes and commercial centers, facilitating the exchange of goods and ideas across the Indian subcontinent and beyond.",
+      "A patronage system, where the emperor and nobles supported artists, scholars, and artisans, fostering a rich cultural and intellectual landscape."
+    ],
+    "Applications / Impact / Case Study: British Colonial Era": [
+      "The British colonial era in India was marked by significant economic, social, and political changes.",
+      "The East India Company's monopoly on trade led to the exploitation of Indian resources and the displacement of local industries.",
+      "The British Raj's administrative structure imposed a hierarchical system, with the British at the top and Indians at the bottom, perpetuating social and economic inequalities.",
+      "The Indian Rebellion of 1857, also known as the Sepoy Mutiny, was a major turning point in British colonial rule, leading to the formal establishment of the British Raj.",
+      "The British colonial era also saw significant cultural exchange and syncretism, with the blending of Indian and European customs and traditions.",
+      "The British colonial era came to an end with the Indian independence movement, led by figures such as Mahatma Gandhi and Jawaharlal Nehru, which ultimately led to India's independence in 1947."
+    ],
+    "Challenges or Limitations: Post-Independence Era": [
+      "India's post-independence era was marked by widespread poverty, with approximately 40% of the population living below the poverty line in the 1950s.",
+      "The country struggled to achieve self-sufficiency in food production, relying heavily on imports to meet domestic demand.",
+      "India's infrastructure, including roads, railways, and telecommunications, was underdeveloped, hindering economic growth and development.",
+      "The country faced significant challenges in providing quality education and healthcare to its vast population, with illiteracy rates and infant mortality rates remaining high.",
+      "India's energy sector was characterized by frequent power outages and shortages, affecting industrial and commercial activities.",
+      "The country's agricultural sector was plagued by low productivity, inadequate irrigation systems, and lack of modern farming techniques, leading to food insecurity and malnutrition."
+    ],
+    "Modern Relevance: Economic Growth and Technological Advancements": [
+      "India's digital payments market is expected to reach $1 trillion by 2025, driven by the growth of mobile wallets and UPI transactions.",
+      "The country's e-commerce sector is projected to reach $200 billion by 2025, with online grocery shopping and food delivery emerging as key growth areas.",
+      "India's startup ecosystem has seen significant growth, with over 50,000 startups registered in 2020, and the country now has the third-largest startup ecosystem in the world.",
+      "The government's initiatives, such as the Make in India and Startup India programs, have helped to create a favorable environment for entrepreneurship and innovation.",
+      "The country's IT sector is expected to continue to drive growth, with the sector expected to reach $200 billion in revenue by 2025."
+    ],
+    "Future Outlook: Emerging Trends and Challenges": [
+      "India's population is projected to reach 1.76 billion by 2050, posing significant challenges for urban planning, infrastructure, and resource allocation.",
+      "The country's digital payments market is expected to reach $1 trillion by 2025, driven by increasing adoption of mobile wallets and online transactions.",
+      "India's renewable energy capacity is set to surpass fossil fuels by 2030, with solar and wind power expected to account for 60% of the country's energy mix.",
+      "The Indian government is investing heavily in artificial intelligence, with a focus on developing AI-powered healthcare and education systems.",
+      "India's e-commerce market is expected to reach $150 billion by 2025, driven by growing demand for online shopping and increasing adoption of digital payment methods."
+    ],
+    "Conclusion": [
+      "India, a nation of 1.3 billion people, has been a key player in the global economy.",
+      "The country's GDP growth rate has been steadily increasing, with a current rate of 7.2%.",
+      "India's IT sector has been a major driver of growth, with the country being home to many major tech companies.",
+      "The country's infrastructure, including roads, ports, and airports, is being rapidly expanded to support its growing economy.",
+      "India's unique blend of traditional and modern culture, as well as its diverse geography, make it an attractive destination for tourists and businesses alike."
+    ]
+  }
+}

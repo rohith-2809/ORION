@@ -21,7 +21,8 @@ const OrionAI = () => {
 
   // Document Generation State
   const [isGenerating, setIsGenerating] = useState(false);
-  const [genTimer, setGenTimer] = useState(0);
+  const [genProgress, setGenProgress] = useState(0);
+  const [genMessage, setGenMessage] = useState('');
 
   useEffect(() => {
     if (chatEndRef.current) {
@@ -150,6 +151,21 @@ const OrionAI = () => {
           }
       });
 
+      socket.on('task_progress', (data) => {
+          if (data.status === 'generating') {
+              setIsGenerating(true);
+              setGenProgress(data.progress || 0);
+              setGenMessage(data.message || 'Generating...');
+          } else if (data.status === 'completed') {
+              setGenProgress(100);
+              setTimeout(() => {
+                  setIsGenerating(false);
+                  setGenProgress(0);
+                  setGenMessage('');
+              }, 2000);
+          }
+      });
+
       return () => socket.close();
   }, []);
 
@@ -257,15 +273,12 @@ const OrionAI = () => {
 
 
 
-  // Generation Timer
+  // Generation Progress logic (handled by socket now)
   useEffect(() => {
-    let interval;
-    if (isGenerating) {
-        interval = setInterval(() => setGenTimer(t => t + 0.1), 100);
-    } else {
-        setGenTimer(0);
+    if (!isGenerating) {
+        setGenProgress(0);
+        setGenMessage('');
     }
-    return () => clearInterval(interval);
   }, [isGenerating]);
 
   // Compute ring color
@@ -366,12 +379,14 @@ const OrionAI = () => {
     if (!textToSend.trim()) return;
 
     // Detect Generation Intent
-    const isGenIntent = textToSend.match(/create|generate|make|build/i) && textToSend.match(/ppt|word|doc|presentation|report/i);
+    const isGenIntent = textToSend.match(/create|generate|make|build|prepare/i) && textToSend.match(/ppt|word|doc|presentation|report/i);
     const isConfirm = textToSend.match(/yes|confirm|proceed|okay/i);
 
     // Trigger Green Orb if intent matches
     if (isGenIntent || isConfirm) {
         setIsGenerating(true);
+        setGenProgress(0);
+        setGenMessage('Initializing job...');
     }
 
     setChatHistory(prev => [...prev, { role: 'user', content: textToSend }]);
@@ -597,11 +612,25 @@ const OrionAI = () => {
 
           {/* EXTERNAL GENERATION TIMER */}
           {isGenerating && !isChatMode && (
-            <div
-              className="mt-6 font-mono text-sm tracking-[0.2em] animate-pulse"
-              style={{ color: ringColor, textShadow: `0 0 8px ${ringColor}` }}
-            >
-                GENERATING RESPONSE... {genTimer.toFixed(1)}s
+            <div className="mt-8 w-64 md:w-80 flex flex-col items-center gap-2">
+                <div
+                className="font-mono text-xs tracking-[0.2em] animate-pulse text-center"
+                style={{ color: ringColor, textShadow: `0 0 8px ${ringColor}` }}
+                >
+                    {genMessage.toUpperCase()}
+                </div>
+                {/* Progress Bar Container */}
+                <div className="w-full h-1 bg-gray-800 rounded-full overflow-hidden shadow-[inset_0_1px_3px_rgba(0,0,0,0.5)]">
+                    <div
+                        className="h-full transition-all duration-500 ease-out"
+                        style={{
+                            width: `${genProgress}%`,
+                            backgroundColor: ringColor,
+                            boxShadow: `0 0 10px ${ringColor}`
+                        }}
+                    />
+                </div>
+                <div className="text-[10px] font-mono text-gray-500">{genProgress}%</div>
             </div>
           )}
 
@@ -631,9 +660,25 @@ const OrionAI = () => {
               ))}
               {isGenerating && (
                  <div className="flex w-full justify-start">
-                    <div className="bg-[#4AF3FF]/5 text-[#4AF3FF] border border-[#4AF3FF]/20 rounded-2xl rounded-bl-sm px-6 py-4 font-mono text-xs animate-pulse tracking-widest flex items-center gap-3">
-                        <div className="w-2 h-2 rounded-full bg-[#4AF3FF]"></div>
-                        GENERATING RESPONSE...
+                    <div className="bg-[#4AF3FF]/5 text-[#4AF3FF] border border-[#4AF3FF]/20 rounded-2xl rounded-bl-sm p-4 font-mono text-xs flex flex-col gap-3 min-w-[250px]">
+                        <div className="flex items-center gap-3 animate-pulse">
+                            <div className="w-2 h-2 rounded-full bg-[#4AF3FF]"></div>
+                            {genMessage.toUpperCase()}
+                        </div>
+                        <div className="w-full h-1 bg-black/50 rounded-full overflow-hidden">
+                            <div
+                                className="h-full transition-all duration-500 ease-out"
+                                style={{
+                                    width: `${genProgress}%`,
+                                    backgroundColor: '#4AF3FF',
+                                    boxShadow: `0 0 10px #4AF3FF`
+                                }}
+                            />
+                        </div>
+                        <div className="text-right text-[10px] opacity-70 flex justify-between">
+                            <span>PROGRESS</span>
+                            <span>{genProgress}%</span>
+                        </div>
                     </div>
                  </div>
               )}
@@ -686,7 +731,7 @@ const OrionAI = () => {
                 borderColor: godMode ? '#f97316' : systemHealth.threats > 0 ? '#ffaa00' : '#4AF3FF',
               }}
             >
-              {isGenerating ? <div className="text-[10px] font-mono animate-pulse">{genTimer.toFixed(0)}s</div> : <IoSend size={18} />}
+              {isGenerating ? <div className="text-[10px] font-mono animate-pulse">{genProgress}%</div> : <IoSend size={18} />}
             </button>
           </form>
           </div>

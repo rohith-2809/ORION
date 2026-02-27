@@ -80,6 +80,15 @@ class IntentClassifier:
         if re.search(r"\b(list|show)\b.*\b(files|directory|folder)\b", t):
             return {"intent": "FILE_LIST"}
 
+        # ================= DOCUMENT CONTINUE/RESUME =================
+        m = re.match(r"^\b(resume|continue)\b\s*(document|job|presentation|doc|ppt)?\s*(.*)$", t)
+        if m:
+            job_id = m.group(3).strip() if m.group(3) else ""
+            return {
+                "intent": "DOCUMENT_JOB_RESUME",
+                "job_id": job_id
+            }
+
         # ================= DOCUMENT CREATE (KEYWORD FALLBACK) =================
         # Simplest possible logic: "create" + "document" = INTENT
         is_create = any(

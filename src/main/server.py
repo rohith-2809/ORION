@@ -93,6 +93,14 @@ def chat():
             )
             orion.memory.add(decision["key"], decision["value"])
 
+        # [FEATURE] Prioritize Document Generation over Chat Mode
+        if decision.get("intent") in ["DOCUMENT_CREATE", "DOCUMENT_JOB_RESUME"]:
+            print(f"[API] 📝 Document intent ({decision.get('intent')}) requested in Chat Mode. Routing to Orchestrator...")
+            # Route to normal execution path
+            response = orion.route(user_message, god_mode=god_mode)
+            print(f"Orion: {response}")
+            return jsonify(response)
+
         # Build conversational history from episodic memory safely
         recent_episodes = orion.memory.get_recent_episodes(limit=3)
         context_str = ""

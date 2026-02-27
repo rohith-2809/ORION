@@ -72,7 +72,7 @@ class OrionOrchestrator:
         self.last_security_event = None
         self.authority = AuthorityManager()
         self.authority.trust = TrustManager() # [NEW] Trust System
-        self.doc_engine = DocumentEngine(self.brain)
+        self.doc_engine = DocumentEngine(self.brain, socketio=self.socketio)
 
         # ─────────────────────────────────────
         # ORION DEFENSE KERNEL (BACKGROUND)
