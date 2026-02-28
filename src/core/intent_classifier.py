@@ -85,7 +85,7 @@ class IntentClassifier:
         if m:
             job_id = m.group(3).strip() if m.group(3) else ""
             return {
-                "intent": "DOCUMENT_JOB_RESUME",
+                "intent": "DOCUMENT_RESUME",
                 "job_id": job_id
             }
 
