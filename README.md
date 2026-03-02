@@ -29,36 +29,44 @@ Unlike cloud-dependent AI assistants, ORION is engineered to operate entirely on
 
 ---
 
-## 🧠 Architectural Overview
-
-ORION operates through four primary, highly-decoupled layers:
-
-### 1️⃣ Cognitive Layer (`src/`)
-The cognitive core goes beyond simple prompt-response behavior. It processes input through a multi-stage reasoning pipeline:
+## 🧠 System Architecture
 
 ```mermaid
-graph LR
-    A[User Input] --> B[Intent Analysis]
-    B --> C[Agent Routing]
-    C --> D[Tool Invocation]
-    D --> E[Memory Sync]
-    E --> F[Response Synthesis]
+graph TD
+    User([👤 User]) <--> |Voice / Text| Frontend(🌐 React UI)
+    User <--> |Microphone / Speaker| VoiceSystem(🎙️ Voice Subsystem)
+
+    Frontend <--> |WebSockets / HTTP| Orchestrator(🧠 Core Orchestrator)
+    VoiceSystem <--> Orchestrator
+
+    Orchestrator <--> Planner(📋 Policy & Intent)
+    Orchestrator <--> Memory(📚 RAG Memory DB)
+    Orchestrator <--> Tools(⚙️ Agentic Tools)
+
+    Tools --> DocEngine(📄 Document Engine)
+    Tools --> Vision(👁️ Screen Agent)
+    Tools --> Defense(🛡️ Defense Kernel)
 ```
 
-The system dynamically enriches context using session memory (`memory.json`), host state signals, prior execution traces, and structured task history.
+ORION operates through highly-decoupled, specialized layers:
+
+### 1️⃣ Cognitive Layer & Core Orchestrator (`src/`)
+The cognitive core goes beyond simple prompt-response behavior. It processes input through a multi-stage reasoning pipeline, parsing intent and intelligently routing tasks to the appropriate sub-systems (`Planner`, `Tools`, `Memory`). The system dynamically enriches context using session memory (`memory.json`), host state signals, prior execution traces, and structured task history.
 
 ### 2️⃣ Agentic Execution Engine
 Tasks are never executed blindly. The engine provides recursive task handling, multi-step reasoning, execution validation loops, and controlled command invocation with strict output verification.
 
-### 3️⃣ Kernel-Aware Defensive Module
-Acts as a cognitive defensive companion with host introspection capabilities:
-- Process inspection & Port monitoring
-- Event log parsing
-- Suspicious activity explanation & System anomaly diagnostics
+### 3️⃣ ORION Document Engine (`📄 Document Engine`)
+A high-performance sub-system dedicated to the synthesis, generation, and formatting of complex data.
+- **How it Works**: When the Orchestrator identifies a large-scale writing or reporting task, it delegates execution to the Document Engine. The engine performs iterative retrieval from the `RAG Memory DB`, structures an outline, and generates comprehensive, production-ready outputs (PPT, PDF, DOCX).
+- **Capabilities**: Capable of generating extensive multi-page documents (e.g., thousands of words, highly structured tokens) with intelligently planned sections, maintaining strict coherence throughout the process.
 
-*Note: Operates strictly in user-space using WMI, PowerShell auditing, process handle enumeration, and OS metadata, avoiding kernel code modification.*
+### 4️⃣ Kernel-Aware Defensive Module (`🛡️ Defense Kernel`)
+Acts as a cognitive defensive companion establishing a robust security posture against unauthorized actions and prompt injections.
+- **How it Works**: Before the Orchestrator or Agentic Tools execute any high-risk system command, the request is evaluated against strict security constraints. The Defense Kernel monitors process execution, parses event logs, and inspects host state. If it detects malicious payloads, unauthorized logic, or policy violations, the execution is hard-blocked and a security incident is logged.
+- **Capabilities**: Process inspection, port monitoring, system anomaly diagnostics, and real-time adversarial prompt blocking. *Note: Operates strictly in user-space using WMI, PowerShell auditing, process handle enumeration, and OS metadata, avoiding kernel code modification.*
 
-### 4️⃣ Memory Architecture (`memory.json`)
+### 5️⃣ Memory Architecture (`📚 RAG Memory DB`)
 Persistent memory maintains session summaries, context reinforcement data, structured state persistence, and optionally encrypted memory segments. It is configurable for stateless execution, controlled persistent, or research logging modes.
 
 ---
