@@ -8,7 +8,7 @@
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-lightgrey.svg)](#)
 
 *ORION is not a chatbot. It is a goal-oriented cognitive execution layer built to reason, inspect, and act.*
-
+ 
 </div>
 
 ---
