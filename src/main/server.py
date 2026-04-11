@@ -241,7 +241,6 @@ def list_outputs():
 
     return jsonify({"outputs": files})
 
-
 @app.route('/api/download/<filename>', methods=['GET'])
 def download_output(filename):
     """Serves the requested file to the frontend for download."""
