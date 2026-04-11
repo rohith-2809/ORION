@@ -67,7 +67,6 @@ def chat():
         f"User: {user_message} "
         f"(God Mode: {god_mode}, Chat Mode: {chat_mode})"
     )
-
     # [BUG FIX] If both God Mode and Chat Mode are enabled, turn off Voice
     if god_mode and chat_mode:
         if getattr(orion, 'voice_active', False):
