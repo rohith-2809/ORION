@@ -4,7 +4,6 @@ ORION DEFENSE KERNEL
 Cognitive, policy-governed host defense layer.
 State-of-the-art, explainable, non-autonomous EDR kernel.
 """
-
 import psutil
 import time
 import statistics
