@@ -25,7 +25,6 @@ CORS(app)
 # Silence noisy /api/status polling from Werkzeug logs
 log = logging.getLogger('werkzeug')
 
-
 class StatusFilter(logging.Filter):
     def filter(self, record):
         return '/api/status' not in record.getMessage()
