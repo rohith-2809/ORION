@@ -3,7 +3,6 @@ import os
 import time
 from datetime import datetime
 
-
 class DocumentJob:
     def __init__(self, job_id, topic, outline=None, context=None):
         self.job_id = job_id
