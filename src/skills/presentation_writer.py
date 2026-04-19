@@ -13,7 +13,6 @@ class PresentationWriter:
     @staticmethod
     def create_deck(topic, outline, content_map, output_path):
         prs = Presentation()
-
         # Define Colors
         DARK_BG = RGBColor(20, 24, 35)      # Dark Slate/Blue
         ACCENT_COLOR = RGBColor(0, 255, 200)  # Cyan/Teal
