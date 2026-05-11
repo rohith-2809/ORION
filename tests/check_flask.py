@@ -1,4 +1,3 @@
-
 try:
     print("Flask is installed")
 except ImportError:
