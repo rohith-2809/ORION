@@ -11,7 +11,7 @@ const OrionAI = () => {
   const [clickPulse, setClickPulse] = useState(false);
   const [sendPulse, setSendPulse] = useState(false);
   const [inputValue, setInputValue] = useState('');
-  const [isWakeDetected, setIsWakeDetected] = useState(false);
+  const [isWakeDetected, setIsWakeDetected] = useState(false); 
 
   // Chat Mode State
   const [isChatMode, setIsChatMode] = useState(false);
