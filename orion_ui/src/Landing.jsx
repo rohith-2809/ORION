@@ -38,7 +38,7 @@ const OrionAI = () => {
             body: JSON.stringify({ active: !isChatMode })
         });
     } catch (e) {
-        console.warn("Could not sync voice status with Orion.");
+        console.warn("Could not sync voice status with Orion."); 
     }
   }, [isChatMode, bootComplete]);
 
