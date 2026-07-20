@@ -1,5 +1,4 @@
 # wake_listener.py
-
 import json
 import queue
 import sounddevice as sd
