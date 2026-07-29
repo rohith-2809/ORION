@@ -1,5 +1,3 @@
-
-
 """
 ORION MITIGATION ENGINE
 ======================
