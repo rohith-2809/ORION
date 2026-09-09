@@ -31,7 +31,7 @@ class OrionExecutor:
 
         return self.allowed_actions[action](payload)
 
-    # ---------- EXECUTORS (NO LOGIC, JUST CALLS) ----------
+    # ---------- EXECUTORS (NO LOGIC, JUST CALLS) ---------- #
 
     def _read_file(self, payload):
         return self.file_tools.read_file(payload["path"])
