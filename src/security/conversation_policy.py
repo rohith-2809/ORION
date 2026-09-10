@@ -1,5 +1,3 @@
-
-
 #Conversation policy
 class ConversationPolicy:
     """
